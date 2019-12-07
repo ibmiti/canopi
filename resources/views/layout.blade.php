@@ -18,16 +18,17 @@
 	<div id="header-wrapper">
 		 <div id="header" class="container">
 			<div id="logo">
-				<!-- <h1><a href="#">7 steps</a></h1> -->
+				 <!-- <h1><a href="#">7 steps</a></h1>  <!-- logo will go here -->
 			</div>
 			<div style="margin-top:-80px;" id="menu">
 				<ul>
-					<!-- <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li> -->
-					<li><a href="/blog" accesskey="2" title="">Our Blog</a></li>
+					<!-- this will make active the current link by whatever path has been routed to -->
+					<li class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"><a href="/" accesskey="1" title="">Homepage</a></li>
+					<li class="{{ Request::path() === 'blog' ? 'current_page_item': '' }}"> <a href="/blog" accesskey="2" title="">Our Blog</a></li>
 					<!-- <li><a href="/about" accesskey="3" title="">About Us</a></li> -->
-					<li><a href="#" accesskey="4" title="">Coming Soon</a></li> <!-- canvas link -->
-					<li><a href="/about" accesskey="5" title="">Coming Soon</a><li> <!-- our story or about us? -->
-					<li><a href="/blog" accesskey="2" title="">Login</a></li>
+					<li class="{{ Request::path() === 'canvas' ? 'current_page_item' : ''}}"><a href="" accesskey="4" title="">Coming Soon</a></li> <!-- canvas link -->
+					<li class="{{ Request::path() === 'about' ? 'current_page_item' : ''}}"><a href="" accesskey="5" title="">Coming Soon</a><li> <!-- our story or about us? -->
+					<li class="{{ Request::path() === 'login' ? 'current_page_item' : ''}}"><a href="" accesskey="2" title="">Login</a></li>
 				</ul>
 			</div>
 		</div>
