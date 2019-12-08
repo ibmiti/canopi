@@ -1,34 +1,20 @@
-<div id="header-wrapper">
-   <div style="margin: -90px 0px 30px 0px;" id="header" class="container">
-    <div style="padding: 0px 0px 60px 10px; margin-left:60px;" id="logo">
-      <h1 style="font-size: 70px"><a href="#">7 steps</a></h1>
-    </div>
-    <div style="margin-top:20px;" id="menu">
-      <ul>
-        <li class="current_page_item"><a href="/" accesskey="1" title="">Back to Canopy</a></li>
-        <li><a href="#" accesskey="2" title="">Coming-Soon</a></li>
-        <!-- <li><a href="/about" accesskey="3" title="">About Us</a></li> -->
-        <li><a href="#" accesskey="4" title="">Coming-Soon</a></li>
-        <li><a href="#" accesskey="5" title="">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-
-  @yield ('header')
-
-</div>
-    <div style="padding: 5px;" class="header-featured">
-      <div id="banner-wrapper">
-        <div id="banner" class="container">
-          <!-- <h2 style="margin-bottom: 60px; padding-bottom: 80px;">7 steps</h2> -->
-          <!-- <p>Lorem ipsum dolor sit amet,d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p> -->
-        </div>
-      </div>
-    </div>
-
-
+@section ('content')
 @extends ('layout')
 
+<!-- <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="/">Canopi</a></h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"><a href="/" accesskey="1" title="">Homepage</a></li>
+        <li class="{{ Request::path() === 'blog' ? 'current_page_item' : '' }}"><a href="/blog" accesskey="2" title="">7 Steps - a Canopi blog</a></li>
+        <li class="{{ Request::path() === 'about' ? 'current_page_item' : '' }}"><a href="/about" accesskey="3" title="">About Us</a></li>
+        <li class="{{ Request::path() === 'contact' ? 'current_page_item' : '' }}"><a href="/contact" accesskey="4" title="">Contact</a></li>
+        <li class="{{ Request::path() === 'canvas' ? 'current_page_item' : '' }}"><a href="#" accesskey="5" title="">Coming Soon : canvas</a></li>
+      </ul>
+    </div>
+</div> -->
 
 
 
@@ -85,6 +71,4 @@
 		</div>
 	</div>
 </div>
-<div id="copyright" class="container">
-	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+@endsection

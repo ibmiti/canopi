@@ -47,7 +47,13 @@ Route::get('/blog', function () {
   // okay to use for now but we will eventuall switch to ::take(2); due to larger amount of articles
   // $article = App\Article::all();
   // $articles = App\Article::latest()->get(); // order by created_atv in desc order
-   return view('about', [
+   return view('blog', [
      'articles' => App\Article::latest()->get()
    ]);
+});
+
+// contact route
+
+Route::get('/contact', function () {
+  return view('contact');
 });
