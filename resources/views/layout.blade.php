@@ -8,7 +8,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="css/default.css" rel="stylesheet"  />
+<link href="/css/default.css" rel="stylesheet"  />
 <link href="css/fonts.css" rel="stylesheet"  />
 </head>
 <!-- end of setting up document -->
@@ -24,10 +24,11 @@
 	      <div id="menu">
 	        <ul>
 	          <li class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"><a href="/" accesskey="1" title="">Homepage</a></li>
-	          <li class="{{ Request::path() === '/blog' ? 'current_page_item' : '' }}"><a href="/blog" accesskey="2" title="">7 Steps - a Canopi blog</a></li>
-	          <li class="{{ Request::path() === '/about' ? 'current_page_item' : '' }}"><a href="/about" accesskey="3" title="">About Us</a></li>
-	          <li class="{{ Request::path() === '/contact' ? 'current_page_item' : '' }}"><a href="/contact" accesskey="4" title="">Contact</a></li>
-	          <li class="{{ Request::path() === '/canvas' ? 'current_page_item' : '' }}"><a href="#" accesskey="5" title="">Coming Soon : canvas</a></li>
+	          <li class="{{ Request::path() === 'blog' ? 'current_page_item' : '' }}"><a href="/blog" accesskey="2" title="">7 Steps - a Canopi blog</a></li>
+	          <li class="{{ Request::path() === 'about' ? 'current_page_item' : '' }}"><a href="/about" accesskey="3" title="">About Us</a></li>
+	          <li class="{{ Request::path() === 'contact' ? 'current_page_item' : '' }}"><a href="/contact" accesskey="4" title="">Contact</a></li>
+	          <li class="{{ Request::path() === 'canvas' ? 'current_page_item' : '' }}"><a href="/canvas" accesskey="5" title="">Coming Soon : canvas</a></li>
+	          <li class="{{ Request::path() === 'articles' ? 'current_page_item' : '' }}"><a href="/articles" accesskey="5" title="">Articles </a></li>
 	        </ul>
 	      </div>
 	  </div>
