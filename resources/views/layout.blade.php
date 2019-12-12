@@ -19,12 +19,13 @@
 	<div class="header-wrapper">
 	  <div id="header" class="container">
 	      <div id="logo">
-	        <h1><a href="/">Canopi</a></h1>
+	        <h1><a href="/">7 Steps
+					</a></h1>
 	      </div>
 	      <div id="menu">
 	        <ul>
 	          <li class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"><a href="/" accesskey="1" title="">Homepage</a></li>
-	          <li class="{{ Request::path() === 'blog' ? 'current_page_item' : '' }}"><a href="/blog" accesskey="2" title="">7 Steps - a Canopi blog</a></li>
+	          <li class="{{ Request::path() === 'blog' ? 'current_page_item' : '' }}"><a href="/blog" accesskey="2" title="">7 Steps blog | Intro</a></li>
 						<li class="{{ Request::path() === 'articles' ? 'current_page_item' : '' }}"><a href="/articles" accesskey="5" title="">7 Steps - Articles </a></li>
 	          <!-- <li class="{{ Request::path() === 'about' ? 'current_page_item' : '' }}"><a href="/about" accesskey="3" title="">About Us</a></li> -->
 	          <!-- <li class="{{ Request::path() === 'contact' ? 'current_page_item' : '' }}"><a href="/contact" accesskey="4" title="">Contact</a></li> -->
@@ -43,7 +44,7 @@
 	@yield('content') <!-- using this here will allow us to yield the above content to other pages.. this is the partner of
 		 extends () -->
 		 <div id="copyright" class="container">
-		 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+		 	<p>&copy; 7 Steps x Canopi | All rights reserved. </p>
 		 </div>
 </body>
-</html> <!-- end of html for document -->
+</html>

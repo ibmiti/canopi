@@ -5,16 +5,19 @@
 	<div id="page" class="container">
 		<div id="content">
 			<div class="title">
-				<h2>Welcome to 7-steps a blog by Canopi</h2>
-				<span class="byline">Mauris vulputate dolor sit amet nibh</span> </div>
-			<p><img src="images/banner.jpg" alt="" class="image image-full" /> </p>
-			<p>Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. </p>
-			<p>Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
-			<p>Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+					<h2 style="margin-left:220px;">Just 7-Steps</h2>
+					<span style="margin-left:150px;" class="byline">Welcome to 7-steps a blog by Canopi</span>
+				<hr style="margin-right: 150px; margin-top: 20px;" width=420px;>
+			</div>
+
+			<p><img src="images/steps.jpg" alt="" class="image image-full" /> </p>
+
+			<!-- <p></p> -->
 		</div>
 
 
 		<div id="sidebar">
+			<h2 style="margin-top: 20px; margin-left: 165px;">Latest</h2>
 			<ul class="style1">
         @foreach ($articles as $article)
 				<li class="first">
@@ -33,7 +36,7 @@
 					<p><a href="#">In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</a></p>
 				</li> -->
 			</ul>
-			<div id="stwo-col">
+			<!-- <div id="stwo-col">
 				<div class="sbox1">
 					<h2>Etiam rhoncus</h2>
 					<ul class="style2">
@@ -52,7 +55,7 @@
 						<li><a href="#">Amet turpis feugiat amet</a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
